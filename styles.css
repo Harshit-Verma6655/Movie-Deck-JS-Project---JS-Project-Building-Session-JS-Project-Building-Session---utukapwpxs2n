@@ -1,1 +1,139 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lato&family=League+Spartan:wght@300&family=Poppins:ital,wght@0,500;1,500&family=Roboto:ital,wght@1,100&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+}
+body{
+  height: 100vh;
+  
+}
+header{
+  text-align: center;
+  background-color: #333;
+  height: 17%;
+  color: white;
+  justify-content: start;
+ display: flex;
+ align-items: center;
+}
+header h1{
+    padding-left: 10px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 1rem;
+}
+nav input{
+    width: 25%;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.662);
+}
+nav button{
+    background-color: #333;
+    color: white;
+    width: 70px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.sort{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 1rem;
+    height: 2rem;
+    flex-wrap: wrap;
+}
+.sort button{
+   padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#sec{
+    padding-left: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    gap: 1%;
+}
+.all, #Favourite{
+width: 85px;
+border: none;
+border-radius: 5px;
+height: 1.5rem;
+cursor: pointer;
+}
+.active{
+    background-color: #333;
+    color: white;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    margin-top: 2rem;
+    
+}
+main .pagination button{
+   padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer{
+    background-color: #333;
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    margin-top: 2%;
+    
+}
+main{
+    margin-top: 3rem;
+}
+.card{
+    width: 200px;
+ border: 1px solid black;
+ height: 390px;
+ margin-top: 10px;
+}
+.card .img img{
+    width: 199px;
+    object-fit: cover;
+    height: 250px;
+}
+.card>p{
+    margin-top: 3px;
+  text-align: center;
+  font-weight: 700;
+}
+.card>.outer .rating{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.card>.outer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card .outer .icon{
+    cursor: pointer;
+}
+main ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 2%;
+    justify-content: center;
+}
