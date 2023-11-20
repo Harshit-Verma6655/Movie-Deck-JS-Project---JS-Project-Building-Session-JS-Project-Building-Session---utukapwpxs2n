@@ -29,7 +29,7 @@ let obj2= JSON.stringify(obj1);
 let ans=localmovie.some((item)=>{
     return JSON.stringify(item)===obj2
     });
-    let icon="";
+    let icon=`<i class="bi bi-heart" id='${obj2}'></i>`;
     if(ans){
          icon=`<i class="bi bi-heart-fill" id='${obj2}'></i>`;
     }else{
