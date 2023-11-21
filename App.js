@@ -250,7 +250,9 @@ function addMovie(obj){
 }
 function removeMovie(obj){
     let movies = getMovie();
-    movies.splice(obj, 1);
+    movies=movies.filter((item)=>{
+        return item['title']!==obj['title'];
+    });
     localStorage.setItem('movies', JSON.stringify(movies));
     
 }
@@ -275,6 +277,7 @@ let icons=document.querySelector('ul');
         }else if(e.target.classList.contains('bi-x-square-fill')){
             let stringobj = e.target.getAttribute('id');
             let obj = JSON.parse(stringobj);
+            console.log(obj);
             removeMovie(obj);
             let arr=getMovie();
             renderFav(arr)
@@ -321,7 +324,7 @@ div.innerHTML=`<p>vote: ${vote_count}</p>
 outer.appendChild(div);
 let divd=document.createElement('div');
 divd.className='icon';
-divd.innerHTML=`<i class="bi bi-x-square-fill"></i>`;
+divd.innerHTML=`<i class="bi bi-x-square-fill" id='${obj2}' ></i>`;
 outer.appendChild(divd);
 li.appendChild(outer);
 
